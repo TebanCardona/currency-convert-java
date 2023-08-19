@@ -3,8 +3,7 @@
 `Java 8<`
 
 Here it's the challange by alaura 😁
-In the project there is an executable
-Also you can read all line code and modifed
+There is an executable in the project. You can also read all the line code and modify it.
 
 ## Getting Started
 
