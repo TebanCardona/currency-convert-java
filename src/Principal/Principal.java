@@ -2,6 +2,8 @@ package Principal;
 
 import javax.swing.JOptionPane;
 
+import CurrencyConvert.Convert;
+
 /**
  * This is the main class for the conversion program.
  * It allows users to select between currency conversion and temperature
@@ -15,8 +17,11 @@ public class Principal {
    *
    * @param args Command-line arguments (not used)
    */
+
   public static void main(String[] args) {
     Response res = new Response();
+    Convert cc = new Convert();
+
     while (true) {
       String options = (JOptionPane.showInputDialog(null, "Select an convert option", "Menu",
           JOptionPane.QUESTION_MESSAGE, null, new Object[] { "Currency Convert", "Tempeture Convert" }, "Select"))
@@ -29,7 +34,7 @@ public class Principal {
       switch (options) {
         case "Currency Convert":
           System.out.println(Minput);
-          // Todo Convert Here
+          cc.CurrConvert(Minput);
           res.run();
           break;
         case "Tempeture Convert":
