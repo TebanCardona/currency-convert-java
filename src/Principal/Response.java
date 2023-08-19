@@ -21,6 +21,8 @@ public class Response {
       System.out.println("Select Affirmative option");
     } else {
       JOptionPane.showMessageDialog(null, "Finished program");
+      System.exit(0);
+
     }
   }
 }

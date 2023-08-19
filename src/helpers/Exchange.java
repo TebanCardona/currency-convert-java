@@ -8,6 +8,6 @@ public class Exchange {
   }
 
   public void dialog(String from, String to, double result) {
-    JOptionPane.showMessageDialog(null, "The conversion from " + from + " to " + to + " was:\n " + result + " $.");
+    JOptionPane.showMessageDialog(null, "The conversion from " + from + " to " + to + " was:\n " + result);
   }
 }

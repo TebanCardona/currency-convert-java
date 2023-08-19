@@ -10,20 +10,20 @@ public class Convert {
 
     String option = (JOptionPane.showInputDialog(null, "Choose the currency you want to convert your money to",
         "Currencies", JOptionPane.PLAIN_MESSAGE, null,
-        new Object[] { "DollarToPeso", "PesoToDollar", "EuroToPeso", "PesoToEuro" }, "Select")).toString();
+        new Object[] { "Dollar To Peso", "Peso To Dollar", "Euro To Peso", "Peso To Euro" }, "Select")).toString();
     switch (option) {
-      case "DollarToPeso":
+      case "Dollar To Peso":
         convert.DollarToPeso(Minput);
         break;
-      case "EuroToPeso":
+      case "Euro To Peso":
         convert.EuroToPeso(Minput);
         break;
 
-      case "PesoToDollar":
+      case "Peso To Dollar":
         convert.PesoToDollar(Minput);
         break;
 
-      case "PesoToEuro":
+      case "Peso To Euro":
         convert.PesoToEuro(Minput);
         break;
       default:

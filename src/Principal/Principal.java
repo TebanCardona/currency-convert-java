@@ -3,6 +3,7 @@ package Principal;
 import javax.swing.JOptionPane;
 
 import CurrencyConvert.Convert;
+import TempetureConvert.TConvert;
 
 /**
  * This is the main class for the conversion program.
@@ -21,6 +22,7 @@ public class Principal {
   public static void main(String[] args) {
     Response res = new Response();
     Convert cc = new Convert();
+    TConvert tc = new TConvert();
 
     while (true) {
       String options = (JOptionPane.showInputDialog(null, "Select an convert option", "Menu",
@@ -33,13 +35,11 @@ public class Principal {
       double Minput = Double.parseDouble(input);
       switch (options) {
         case "Currency Convert":
-          System.out.println(Minput);
           cc.CurrConvert(Minput);
           res.run();
           break;
         case "Tempeture Convert":
-          System.out.println(Minput);
-          // Todo convert Here
+          tc.TempConvert(Minput);
           res.run();
           break;
         default:
